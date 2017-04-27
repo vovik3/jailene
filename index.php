@@ -1,4 +1,4 @@
-<?php include ('jailene/header.php'); ?> 
+<?php include ('header.php'); ?> 
 
 
       <div class="masthead">
@@ -36,7 +36,7 @@
 		?>
 		
 		
-		<form action="jailene/auth_check.php" method="post" class="form-signin">
+		<form action="auth_check.php" method="post" class="form-signin">
         <h2 class="form-signin-heading">Please sign in</h2>
         <input name="username" type="text" class="input-block-level" placeholder="Username">
         <input name="password" type="password" class="input-block-level" placeholder="Password"> 	
@@ -44,9 +44,9 @@
       </form>
 	  
 	  
-        <a class="btn btn-large btn-success" href="jailene/register.php">Register New User</a>
+        <a class="btn btn-large btn-success" href="register.php">Register New User</a>
       </div>
 
 
 ?
-<?php include ('jailene/footer.php'); ?> 
+<?php include ('footer.php'); ?> 

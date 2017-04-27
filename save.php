@@ -1,5 +1,5 @@
 <?php 
-include "jailene/config.php";
+include "jailenes.php";
 $id = $_POST["id"]; 
 $text = $_POST["text"]; 
 $check = $_POST["check"]; 
