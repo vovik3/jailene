@@ -7,7 +7,7 @@ header("location:index.php");
 $username = $_SESSION['username'];
 ?>
 
-<?php include ('header.php'); ?> 
+<?php include ('jailene/header.php'); ?> 
 
 <?php
 $update = $_GET['update'];
@@ -108,4 +108,4 @@ $gender = $match_value['gender'];
     return confirm("Are you sure you want to Logout?");
 })
 </script>
-<?php include ('footer.php'); ?> 
+<?php include ('jailene/footer.php'); ?> 
