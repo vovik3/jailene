@@ -1,4 +1,4 @@
-<?php include ('jailene/config.php'); ?> 
+<?php include ('config.php'); ?> 
 
 <!DOCTYPE html>
 

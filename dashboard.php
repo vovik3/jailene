@@ -5,14 +5,14 @@
 session_start();
 //checks if the login session is true
 if(!$_SESSION['username']){
-header("location:jailene/index.php");
+header("location:index.php");
 }
 $username = $_SESSION['username'];
 
 // --- Authenticate code ends here ---
 ?>
 
-<?php include ('jailene/header.php'); ?> 
+<?php include ('header.php'); ?> 
 
 <?php
 $delete = $_GET['delete'];
@@ -148,4 +148,4 @@ $('.delete').click(function(){
     return confirm("Are you sure you want to Delete it?");
 });
 </script>
-<?php include ('jailene/footer.php'); ?> 
+<?php include ('footer.php'); ?> 

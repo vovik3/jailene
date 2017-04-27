@@ -6,7 +6,7 @@ $db = NULL;
 // Check to see if we are on a Heroku Server by checking for an environmental variable with db data
 
 
-$hostname = "162.218.52.175";
+$hostname = "localhost";
 $username = "dzserve1_jay";
 $password = "password1";
 $database = "dzserve1_jay";
