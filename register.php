@@ -1,4 +1,4 @@
-﻿<?php include ('header.php'); ?> 
+﻿<?php include ('jailene/header.php'); ?> 
 
 
 <?php
@@ -160,4 +160,4 @@ function validate()
 
 
 
-<?php include ('footer.php'); ?> 
+<?php include ('jailene/footer.php'); ?> 
