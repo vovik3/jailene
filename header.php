@@ -1,5 +1,5 @@
 <? 
-php include ('./config.php'); 
+php include ('jailene/config.php'); 
 
 <!DOCTYPE html>
 
