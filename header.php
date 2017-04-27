@@ -1,4 +1,5 @@
-<?php include ('./config.php'); ?> 
+<? 
+php include ('./config.php'); 
 
 <!DOCTYPE html>
 
@@ -111,3 +112,4 @@ width:95%;
     <div class="container-narrow">
 	
 	
+?> 
