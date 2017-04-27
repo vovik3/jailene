@@ -5,14 +5,14 @@
 session_start();
 //checks if the login session is true
 if(!$_SESSION['username']){
-header("location:index.php");
+header("location:jailene/index.php");
 }
 $username = $_SESSION['username'];
 
 // --- Authenticate code ends here ---
 ?>
 
-<?php include ('header.php'); ?> 
+<?php include ('jailene/header.php'); ?> 
 
 <?php
 $delete = $_GET['delete'];
@@ -25,7 +25,7 @@ $user_id = $match_value['id'];
 ?>
 <br/>
 
- <div style="float:right">  <a href="add.php" class="btn btn-warning"> Add New List </a>  <a class="btn btn-info" href="settings.php" > Settings </a>  <a class="btn btn-danger logout" href="logout.php" > Logout</a> </div>
+ <div style="float:right">  <a href="jailene/add.php" class="btn btn-warning"> Add New List </a>  <a class="btn btn-info" href="jailene/settings.php" > Settings </a>  <a class="btn btn-danger logout" href="logout.php" > Logout</a> </div>
 
  <fieldset>
     <legend>Welcome <?php echo $username; ?>, </legend>
@@ -94,7 +94,7 @@ function getText(text){
 			text: text
              };
 	 $.ajax({
-      url: "save.php",
+      url: "jailene/save.php",
       type: "post",
       data: model,
       success: function(data){
@@ -122,7 +122,7 @@ function getcheck(check){
 			check: check
              };
 	 $.ajax({
-      url: "save.php",
+      url: "jailene/save.php",
       type: "post",
       data: model,
       success: function(data){
@@ -148,4 +148,4 @@ $('.delete').click(function(){
     return confirm("Are you sure you want to Delete it?");
 });
 </script>
-<?php include ('footer.php'); ?> 
+<?php include ('jailene/footer.php'); ?> 
