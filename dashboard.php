@@ -5,7 +5,7 @@
 session_start();
 //checks if the login session is true
 if(!$_SESSION['username']){
-header("location:index.php");
+header("location:jailene/index.php");
 }
 $username = $_SESSION['username'];
 
