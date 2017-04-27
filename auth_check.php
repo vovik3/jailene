@@ -1,6 +1,6 @@
 s<?php
 session_start();
-include ('config.php'); 
+include ('jailene/config.php'); 
 
 // Getting username and password from login form
 $username = $_POST['username']; 
