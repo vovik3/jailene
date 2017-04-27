@@ -2,7 +2,7 @@
 
 //Connection to the MySQL Server by - tutbuzz.com
 
-define('DB_SERVER', 'localhost'); // Mysql hostname, usually localhost
+define('DB_SERVER', '162.218.52.175'); // Mysql hostname, usually localhost
 define('DB_USERNAME', 'dzserve1_jay'); // Mysql username
 define('DB_PASSWORD', 'password1'); // Mysql password
 define('DB_DATABASE', 'dzserve1_jay'); // Mysql database name
