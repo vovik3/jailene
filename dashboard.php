@@ -12,7 +12,7 @@ $username = $_SESSION['username'];
 // --- Authenticate code ends here ---
 ?>
 
-<?php include ('header.php'); ?> 
+<?php include ('jailene/header.php'); ?> 
 
 <?php
 $delete = $_GET['delete'];
@@ -148,4 +148,4 @@ $('.delete').click(function(){
     return confirm("Are you sure you want to Delete it?");
 });
 </script>
-<?php include ('footer.php'); ?> 
+<?php include ('jailene/footer.php'); ?> 
