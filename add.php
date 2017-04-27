@@ -4,20 +4,20 @@
 session_start();
 //checks if the login session is true
 if(!$_SESSION['username']){
-header("location:index.php");
+header("location:jailene/index.php");
 }
 $username = $_SESSION['username'];
 
 // --- Authenticate code ends here ---
 ?>
-<?php include ('header.php'); ?> 
+<?php include ('jailene/header.php'); ?> 
 <?php
 $document_get = mysql_query("SELECT * FROM users WHERE username='$username'");
 $match_value = mysql_fetch_array($document_get);
 $user_id = $match_value['id'];
 ?>
 <br/>
- <div style="float:right"> <a class="btn btn-warning" href="dashboard.php" > Dashboard </a>  <a class="btn btn-info" href="settings.php" > Settings </a>  <a class="btn btn-danger logout" href="logout.php" > Logout</a> </div>
+ <div style="float:right"> <a class="btn btn-warning" href="jailene/dashboard.php" > Dashboard </a>  <a class="btn btn-info" href="jailene/settings.php" > Settings </a>  <a class="btn btn-danger logout" href="logout.php" > Logout</a> </div>
 
  <fieldset>
     <legend>Welcome <?php echo $username; ?>, </legend>
@@ -58,7 +58,7 @@ $query = mysql_query("INSERT INTO todolist (user_id, description, check_value) V
 <?php } else { ?>
 <div class="alert alert-success">
   <button type="button" class="close" data-dismiss="alert">&times;</button>
-  <strong>Success! </strong> Your lists has been successfully added, please go to your <a href="dashboard.php" > dashboard board </a>.
+  <strong>Success! </strong> Your lists has been successfully added, please go to your <a href="jailene/dashboard.php" > dashboard board </a>.
 </div>
 <?php
 } 
@@ -68,4 +68,4 @@ $('.logout').click(function(){
     return confirm("Are you sure you want to Logout?");
 })
 </script>
-<?php include ('footer.php'); ?> 
+<?php include ('jailene/footer.php'); ?> 
