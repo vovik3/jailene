@@ -1,4 +1,4 @@
-<?php include ('./header.php'); ?> 
+<?php include ('jailene/header.php'); ?> 
 
 
       <div class="masthead">
@@ -49,4 +49,3 @@
 
 
 ?
-<?php include ('./footer.php'); ?> 
