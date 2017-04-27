@@ -1,6 +1,6 @@
 <?php
 session_start();
-include ('config.php'); 
+include ('./config.php'); 
 
 // Getting username and password from login form
 $username = $_POST['username']; 
