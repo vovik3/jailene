@@ -4,13 +4,13 @@
 session_start();
 //checks if the login session is true
 if(!$_SESSION['username']){
-header("location:index.php");
+header("location:jailene/index.php");
 }
 $username = $_SESSION['username'];
 
 // --- Authenticate code ends here ---
 ?>
-<?php include ('header.php'); ?> 
+<?php include ('jailene/header.php'); ?> 
 <?php
 $document_get = mysql_query("SELECT * FROM users WHERE username='$username'");
 $match_value = mysql_fetch_array($document_get);
@@ -68,4 +68,4 @@ $('.logout').click(function(){
     return confirm("Are you sure you want to Logout?");
 })
 </script>
-<?php include ('footer.php'); ?> 
+<?php include ('jailene/footer.php'); ?> 
