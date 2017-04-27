@@ -1,4 +1,6 @@
-<?php include ('jailene/header.php');
+<?php 
+
+include ('jailene/header.php');
 
 
       <div class="masthead">
