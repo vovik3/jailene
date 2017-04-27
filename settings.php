@@ -2,12 +2,12 @@
 //place this code in the pages, which you need to authenticate
 session_start();
 if(!$_SESSION['username']){
-header("location:index.php");
+header("location:jailene/index.php");
 }
 $username = $_SESSION['username'];
 ?>
 
-<?php include ('header.php'); ?> 
+<?php include ('jailene/header.php'); ?> 
 
 <?php
 $update = $_GET['update'];
