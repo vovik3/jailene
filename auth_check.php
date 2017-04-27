@@ -23,14 +23,14 @@ if($count==1){
 // now redirect to dashboard page, we also store the username in session for further use in dashboard
 $_SESSION['username']= $username; // storing username in session
 
-header("location:dashboard.php");
+header("location:jailene/dashboard.php");
 }
 
 //if the username and password doesn't match redirect to homepage with message=1
 else {
     echo '
     <script language="javascript" type="text/javascript">
-window.location.href="index.php?message=1";
+window.location.href="jailene/index.php?message=1";
 </script>';
 
 }
